@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumFramework">
+
+	<listeners>
+		<listener class-name="ExtentReport.ExtentReportListner" />
+	</listeners>
+
+
+	<test name="SeleniumFramework Test Cases">
+		<classes>
+		<class name="test.LoginPageTest">
+			<methods>
+				<include name="LoginPageTest_WhenCorrectEmailAndPasswordEntered" />
+			</methods>
+		</class>
+		</classes>
+	</test>
+</suite>

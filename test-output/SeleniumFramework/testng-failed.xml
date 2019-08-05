@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SeleniumFramework]">
+  <listeners>
+    <listener class-name="ExtentReport.ExtentReportListner"/>
+  </listeners>
+  <test name="SeleniumFramework Test Cases">
+    <classes>
+      <class name="test.LoginPageTest"/>
+    </classes>
+  </test> <!-- SeleniumFramework Test Cases -->
+  <test name="SeleniumFramework Test Cases(failed)">
+    <classes>
+      <class name="test.LoginPageTest">
+        <methods>
+          <include name="exitBrowser"/>
+          <include name="LoginPageTest_WhenCorrectEmailAndPasswordEntered"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.LoginPageTest -->
+    </classes>
+  </test> <!-- SeleniumFramework Test Cases(failed) -->
+</suite> <!-- Failed suite [SeleniumFramework] -->
